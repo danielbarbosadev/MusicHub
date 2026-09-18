@@ -1,0 +1,61 @@
+h2 {
+    border-bottom: 2px solid black;
+}
+.cabecalho img:nth-child(2){
+    width: 50px;
+    height: 50px;
+}
+
+.artista {
+    margin: 0 120px;
+    padding: 25px 0;
+}
+ .musicas-mais-tocadas{
+     margin: 0 120px;
+    padding: 25px 0;
+ }
+
+.lista-musicas {
+    list-style: none;
+    counter-reset: musica;
+    margin: 0;
+    padding: 0;
+}
+
+.lista-musicas li {
+    counter-increment: musica;
+
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+
+    margin-bottom: 12px;
+}
+
+.lista-musicas li::before {
+    content: counter(musica);
+    text-align: center;
+}
+
+.faixa-musical {
+    display: grid;
+    grid-template-columns: 42px 1fr 150px 60px;
+    align-items: center;
+    gap: 10px;
+}
+
+.faixa-musical img {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border-radius: var(--border-cards);
+}
+
+.faixa-musical p {
+    margin: 0;
+}
+
+.reproducoes,
+.duracao {
+    text-align: right;
+}
