@@ -1,0 +1,59 @@
+.conteudo
+{
+    padding: 0 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 90vh;
+}
+
+.login
+{
+    background-color: gray;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 80%;
+    gap: 50px;
+}
+
+.progresso-login
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.progresso-login span
+{
+    background-color: var(--cor-borda);
+    width: 15%;
+    height: 10px;
+    border-radius: 100px;
+}
+
+.titulo-login
+{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    align-self: center;
+    gap: 10px;
+}
+
+.titulo-login h1
+{
+    font-size: 2.5em;  
+}
+
+.titulo-login p
+{
+    font-size: 1.2em;
+    width: 85%;
+    align-self: center;
+}
+
