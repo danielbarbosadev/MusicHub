@@ -1,0 +1,75 @@
+body {
+    background-color: var(--cor-fundo);
+}
+
+/* HEADER */
+
+.cabecalho img:nth-child(2) {
+    width: 50px;
+    height: 50px;
+}
+
+/* MAIN */
+
+main {
+    margin: 75px 120px 75px 120px;
+}
+
+.perfil {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.perfil-imagem {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.estatisticas {
+    display: flex;
+    gap: 10px;
+}
+
+.estatisticas a {
+    text-decoration: none;
+    color: var(--texto);
+}
+
+.configuracao {
+    display: flex;
+    height: fit-content;
+}
+
+/* MINHAS PLAYLIST */
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 75px 0px 0px 0px;
+    border-bottom: 2px solid black;
+}
+
+.playlist {
+    display: flex;
+    justify-content: space-around;
+    padding: 52px;
+}
+
+
+.album {
+    padding: 0px 0px 21px 0px;
+    border: 2px solid var(--cor-borda);
+    border-radius: 12px;
+}
+
+.album h3,
+p {
+    padding: 10px 10px 0px 10px;
+}
+
+.album img {
+    border-radius: 0px;
+}
