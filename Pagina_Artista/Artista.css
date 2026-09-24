@@ -1,19 +1,74 @@
 h2 {
     border-bottom: 2px solid black;
+    margin-bottom: 20px;
 }
-.cabecalho img:nth-child(2){
+
+.cabecalho img:nth-child(2) {
     width: 50px;
     height: 50px;
 }
 
+/* artista */
+
 .artista {
+    display: flex;
+    align-items: center;
     margin: 0 120px;
     padding: 25px 0;
 }
- .musicas-mais-tocadas{
-     margin: 0 120px;
+
+
+.artista .foto-artista {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.info-artista {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nome-verificado {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nome-verificado h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+}
+
+.icone-verificado {
+    width: 30px;
+    height: 30px;
+}
+.btn-seguir {
+    margin-left: auto; 
+    background-color: var(--cor-destaque-vermelho); 
+    color: var(--cor-fundo);
+    border: none;
+    padding: 10px 30px;
+    border-radius: var(--border-botao);
+    cursor: pointer;
+    
+}
+
+.btn-seguir:hover {
+    background-color: #B45938;
+}
+
+/* músicas mais tocadas */
+
+.musicas-mais-tocadas {
+    margin: 0 120px;
     padding: 25px 0;
- }
+}
 
 .lista-musicas {
     list-style: none;
@@ -58,4 +113,91 @@ h2 {
 .reproducoes,
 .duracao {
     text-align: right;
+}
+
+.btn-ver-mais {
+    background-color: var(--cor-destaque-vermelho); 
+    color: var(--cor-fundo);
+    padding: 10px 20px;
+    border-radius: var(--border-botao);
+    cursor: pointer;
+    border: none;
+}
+
+.btn-ver-mais:hover {
+    background-color: #B45938;
+}
+
+/* Discografia */
+
+.discografia {
+    margin: 0 120px;
+    padding: 25px 0;
+}
+
+.lista-discografia {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.album {
+    width: 250px;
+}
+
+.album img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: var(--border-cards);
+}
+
+.album p {
+    display: inline;
+}
+/* Sobre o artista */
+
+.sobre{
+    margin: 0 120px;
+    padding: 25px 0;
+}
+
+.conteudo-sobre {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.foto-sobre {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+
+.texto-sobre {
+    flex: 1;
+    max-width: 600px;
+}
+
+.texto-sobre p {
+    font-size: 1.15rem; 
+    line-height: 1.6;
+    color: var(--texto);
+}
+
+.leia-mais {
+    color: var(--cor-destaque-azul);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.leia-mais:hover {
+    text-decoration: underline;
 }
