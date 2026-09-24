@@ -56,11 +56,20 @@ h2 {
     padding: 10px 30px;
     border-radius: var(--border-botao);
     cursor: pointer;
-    
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .btn-seguir:hover {
     background-color: #B45938;
+}
+
+.btn-seguir.seguindo {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.btn-seguir.seguindo:hover {
+    background-color: #736E6E;
 }
 
 /* músicas mais tocadas */
