@@ -1,0 +1,213 @@
+.btn-entrar-login 
+{
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--cor-destaque-vermelho);
+
+    border: 1px solid var(--cor-destaque-vermelho);
+    border-radius: var(--border-botao);
+
+    padding: 10px 25px;
+}
+
+.btn-entrar-login:hover
+{
+    transform: scale(1.025);
+    transition: 100ms;
+}
+
+.conteudo 
+{
+    padding: 0 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 80vh;
+}
+
+.cadastro 
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+
+    position: relative;
+}
+
+.seta-voltar
+{
+    position: absolute;
+    text-decoration: none;
+    color: #000000;
+}
+
+.progresso-cadastro 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    
+    
+    position: relative;
+}
+
+.progresso-cadastro p
+{
+    font-size: 1.2em;
+}
+
+.barra-progresso 
+{
+    background-color: var(--cor-borda);
+    width: 135px;
+    height: 10px;
+    border-radius: 100px;
+}
+
+.porcentagem 
+{
+    background-color: var(--cor-destaque-vermelho);
+    width: 135px;
+
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.titulo-cadastro
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.titulo-cadastro h1 
+{
+    font-size: 3em;
+    width: 100%;
+    font-weight: 700;
+}
+
+form 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sessao-input 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+
+    margin-bottom: 15px;
+}
+
+.sessao-input label 
+{
+    font-weight: 600;
+}
+
+.sessao-input input, select
+{
+    height: 50px;
+    width: 500px;
+
+    border-radius: 10px;
+    border: 1px solid #a0a0a0;
+    outline: none;
+
+    padding-left: 10px;
+
+    display: flex;
+}
+
+.sessao-input input::placeholder 
+{
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+.sessao-input a 
+{
+    align-self: flex-end;
+    font-size: .9em;
+    font-weight: 600;
+    color: var(--cor-destaque-vermelho);
+}
+
+.sessao-input select
+{
+    height: 50px;
+    width: 500px;
+
+    border-radius: 10px;
+    border: 1px solid #a0a0a0;
+    outline: none;
+
+    padding-left: 10px;
+
+    display: flex;
+
+    background-color: #ffffff;
+    color: #757575;
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+.txt-termos-privacidade
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    
+    width: 70%;
+
+    color: #494949;
+
+    margin-bottom: 10px;
+}
+
+.txt-termos-privacidade a
+{
+    color: var(--cor-destaque-vermelho);
+}
+
+.btn-cadastrar 
+{
+    background-color: var(--cor-destaque-vermelho);
+
+    border: none;
+    border-radius: var(--border-botao);
+
+    height: 50px;
+    width: 400px;
+
+
+    font-weight: 700;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    transition: 100ms;
+}
+
+.btn-cadastrar:hover 
+{
+    cursor: pointer;
+    background-color: #a33108;
+    transform: scale(1.025);
+}
