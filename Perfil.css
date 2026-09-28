@@ -1,0 +1,178 @@
+body {
+    background-color: var(--cor-fundo);
+}
+
+/* HEADER */
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho img:nth-child(2) {
+    width: 50px;
+    height: 50px;
+}
+
+/* MAIN */
+
+main {
+    margin: 75px 120px 75px 120px;
+}
+
+.perfil {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.perfil-imagem {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.estatisticas {
+    display: flex;
+    gap: 10px;
+}
+
+.estatisticas a {
+    text-decoration: none;
+    color: var(--texto);
+}
+
+.configuracao {
+    display: flex;
+    height: fit-content;
+    gap: 20px;
+}
+
+.configuracao button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+/* MINHAS PLAYLIST */
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 75px;
+    border-bottom: 2px solid black;
+}
+
+.playlist {
+    display: flex;
+    justify-content: space-around;
+    padding: 52px;
+}
+
+
+.album {
+    padding: 10px 10px 21px 10px;
+    border: 2px solid var(--cor-borda);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.album:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.album h3,
+.album p {
+    padding: 10px 10px 0px 10px;
+}
+
+.album img {
+    border-radius: 0px;
+}
+
+.artistas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.artista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin: 35px 120px;
+}
+
+.rodape .linha {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #000;
+}
+
+.rodape .conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.conteudo div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.conteudo p {
+    cursor: pointer;
+}
+
+.conteudo p:hover {
+    text-decoration: underline;
+}
+
+.rodape .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.rodape .info span {
+    font-weight: bold;
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+}
+
+.rodape .info span:hover {
+    text-decoration: underline;
+}
+
+.rodape .info .termos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.rodape .info p {
+    font-weight: bold;
+}
