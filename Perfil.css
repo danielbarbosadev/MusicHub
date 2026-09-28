@@ -53,6 +53,7 @@ main {
     background: none;
     border: none;
     cursor: pointer;
+    font-size: 25px;
 }
 
 /* MINHAS PLAYLIST */
@@ -111,40 +112,67 @@ h2 {
 
 /* FOOTER */
 
-.footer-categorias {
+.rodape {
     display: flex;
-    justify-content: space-around;
-    border-top: 2px solid black;
-    margin: 50px 120px 0;
-    padding: 40px 0;
+    flex-direction: column;
+    gap: 35px;
+    margin: 35px 120px;
 }
 
-.footer-categorias h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
+.rodape .linha {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #000;
 }
 
-.footer-categorias p {
-    margin: 8px 0;
+.rodape .conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.conteudo div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.conteudo p {
     cursor: pointer;
 }
 
-.footer-categorias p:hover {
+.conteudo p:hover {
     text-decoration: underline;
 }
 
-.footer-informacoes {
+.rodape .info {
     display: flex;
-    justify-content: space-around;
-}
-
-.footer-informacoes {
-    gap: 20px;
-}
-
-.footer-bottom {
-    display: flex;    
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 50px 120px 0px 120px;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.rodape .info span {
+    font-weight: bold;
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+}
+
+.rodape .info span:hover {
+    text-decoration: underline;
+}
+
+.rodape .info .termos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.rodape .info p {
+    font-weight: bold;
 }
