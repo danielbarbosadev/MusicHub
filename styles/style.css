@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* CONFIGURAÇÕES GERAIS */
+
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+======================================== */
 
 * {
     margin: 0;
@@ -15,7 +18,10 @@ body {
     background-color: #FCFCFC;
 }
 
-/* HEADER */
+
+/* ========================================
+   HEADER
+======================================== */
 
 .cabecalho {
     display: flex;
@@ -30,13 +36,16 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
     font-size: 1.2em;
+
     width: 100%;
 }
 
 .logo-musichub {
     height: 50px;
     width: 200px;
+
     cursor: pointer;
 }
 
@@ -44,21 +53,29 @@ body {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+
     gap: 20px;
+
     height: 50px;
     width: 500px;
+
     border: 2px solid #CCC;
     border-radius: 25px;
+
     padding-left: 25px;
+
     font-weight: bold;
 }
 
 .input-pesquisa {
     height: 40px;
     width: 100%;
+
     border-radius: 25px;
     border: none;
+
     font-weight: bold;
+
     box-sizing: border-box;
 }
 
@@ -69,30 +86,40 @@ body {
 .icone-pesquisa {
     width: 20px;
     height: 20px;
+
     cursor: pointer;
 }
 
 .foto-perfil {
     height: auto;
     width: 50px;
+
     border-radius: 50%;
+
     cursor: pointer;
 }
 
-/* MAIN - ÁLBUM */
+
+/* ========================================
+   MAIN - ÁLBUM
+======================================== */
 
 .album {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     margin: 50px 120px;
     padding-bottom: 50px;
+
     border-bottom: 2px solid #000;
 }
 
 .capa-album {
     height: 250px;
+
     object-fit: cover;
+
     border-radius: 10px;
 }
 
@@ -100,12 +127,14 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+
     gap: 25px;
 }
 
 .info-textual {
     display: flex;
     flex-direction: column;
+
     gap: 10px;
 }
 
@@ -117,7 +146,22 @@ body {
 .titulo-album {
     font-size: 2.5em;
     font-weight: bold;
+
     color: #2C4C59;
+}
+
+.titulo-album a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.titulo-artista {
+    font-size: 1.5em;
+}
+
+.titulo-artista a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .dados-album {
@@ -127,17 +171,23 @@ body {
 .interacoes-album {
     display: flex;
     align-items: center;
+
     gap: 20px;
 }
 
 .botao-play {
     background-color: #587B7F;
     color: #FFF;
+
     border: none;
     border-radius: 50%;
+
     padding: 20px;
+
     font-size: 1.2em;
+
     cursor: pointer;
+
     transition: 0.2s;
 }
 
@@ -151,50 +201,157 @@ body {
     height: 50px;
 }
 
-/* MAIN - LISTA MÚSICAS */
+
+/* ========================================
+   MAIN - LISTA DE MÚSICAS
+======================================== */
 
 .cabecalho-musicas {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px 120px 25px 120px;
+
+    margin: 0 120px 25px 120px;
 }
 
 .disco-album {
     display: flex;
     align-items: center;
+
     gap: 10px;
+
     font-weight: bold;
 }
 
 .lista-musicas {
     display: flex;
     flex-direction: column;
+
     gap: 15px;
+
     margin: 0 120px;
 }
 
 .musica {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+    align-items: center;
+
+    margin-bottom: 10px;
 }
 
 .numeracao-musica {
+    width: 25px;
+
     text-align: center;
+
     font-weight: bold;
+
     color: #2C4C59;
 }
 
 .num-titulo-musica {
     display: flex;
     align-items: center;
+
     font-weight: bold;
+
     gap: 10px;
+}
+
+.num-titulo-musica a {
+    color: #000;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.num-titulo-musica a:hover {
+    color: #2C4C59;
+
+    text-decoration: underline;
 }
 
 .duracao-musica {
     text-align: center;
+
     font-weight: bold;
+
     color: #777;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+
+    gap: 35px;
+
+    margin: 35px 120px;
+}
+
+.rodape .linha {
+    width: 100%;
+}
+
+.rodape .conteudo {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+.conteudo div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.conteudo p {
+    cursor: pointer;
+}
+
+.conteudo p:hover {
+    text-decoration: underline;
+}
+
+.rodape .info {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    margin-top: 25px;
+}
+
+.rodape .info span {
+    font-weight: bold;
+    font-size: 18px;
+
+    color: #555;
+
+    cursor: pointer;
+}
+
+.rodape .info span:hover {
+    text-decoration: underline;
+}
+
+.rodape .info .sobre {
+    display: flex;
+    flex-direction: row;
+
+    gap: 20px;
+}
+
+.rodape .info p {
+    font-weight: bold;
 }
