@@ -131,6 +131,7 @@ h2 {
     border-radius: var(--border-botao);
     cursor: pointer;
     border: none;
+    margin: 5px 0 0 20px
 }
 
 .btn-ver-mais:hover {
@@ -141,7 +142,7 @@ h2 {
 
 .discografia {
     margin: 0 120px;
-    padding: 25px 0;
+    /* padding: 25px 0; */
 }
 
 .lista-discografia {
@@ -152,6 +153,7 @@ h2 {
 
 .album {
     width: 250px;
+    cursor: pointer;
 }
 
 .album img {
@@ -174,7 +176,7 @@ h2 {
 .conteudo-sobre {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 200px;
 }
 
 
@@ -209,4 +211,71 @@ h2 {
 
 .leia-mais:hover {
     text-decoration: underline;
+}
+
+/* Footer */
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin: 35px 120px;
+}
+
+.rodape .linha {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #000;
+}
+
+.rodape .conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.conteudo div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.conteudo p {
+    cursor: pointer;
+}
+
+.conteudo p:hover {
+    text-decoration: underline;
+}
+
+.rodape .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.rodape .info span {
+    font-weight: bold;
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+}
+
+.rodape .info span:hover {
+    text-decoration: underline;
+}
+
+.rodape .info .termos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.rodape .info p {
+    font-weight: bold;
 }
