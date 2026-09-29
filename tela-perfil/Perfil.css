@@ -1,0 +1,486 @@
+body {
+    background-color: var(--cor-fundo);
+}
+
+/* HEADER */
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho img:nth-child(2) {
+    width: 50px;
+    height: 50px;
+}
+
+/* MAIN */
+
+main {
+    margin: 75px 120px 75px 120px;
+}
+
+.perfil {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.perfil-imagem {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.estatisticas {
+    display: flex;
+    gap: 10px;
+}
+
+.estatisticas a {
+    text-decoration: none;
+    color: var(--texto);
+}
+
+.configuracao {
+    display: flex;
+    height: fit-content;
+    gap: 20px;
+}
+
+.configuracao button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+/* MINHAS PLAYLIST */
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 75px;
+    border-bottom: 2px solid black;
+}
+
+.playlist {
+    display: flex;
+    justify-content: space-around;
+    padding: 52px;
+}
+
+
+.album {
+    padding: 10px 10px 21px 10px;
+    border: 2px solid var(--cor-borda);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.album:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.album h3,
+.album p {
+    padding: 10px 10px 0px 10px;
+}
+
+.album img {
+    border-radius: 0px;
+}
+
+.artistas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.artista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin: 35px 120px;
+}
+
+.rodape .linha {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #000;
+}
+
+.rodape .conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.conteudo div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.conteudo p {
+    cursor: pointer;
+}
+
+.conteudo p:hover {
+    text-decoration: underline;
+}
+
+.rodape .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.rodape .info span {
+    font-weight: bold;
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+}
+
+.rodape .info span:hover {
+    text-decoration: underline;
+}
+
+.rodape .info .termos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.rodape .info p {
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+
+    /* HEADER */
+
+    .cabecalho {
+        padding: 0 30px;
+    }
+
+    /* MAIN */
+
+    main {
+        margin: 60px 50px;
+    }
+
+    .perfil {
+        gap: 30px;
+    }
+
+    .perfil-imagem {
+        gap: 15px;
+    }
+
+    .estatisticas {
+        gap: 6px;
+    }
+
+    .configuracao {
+        gap: 12px;
+    }
+
+    .configuracao button {
+        font-size: 22px;
+    }
+
+    /* MINHAS PLAYLIST */
+
+    h2 {
+        font-size: 32px;
+        margin-top: 60px;
+    }
+
+    .playlist {
+        padding: 40px 20px;
+        gap: 25px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .album {
+        padding: 8px 8px 18px 8px;
+    }
+
+    /* ARTISTAS */
+
+    .artistas {
+        margin-top: 40px;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    /* FOOTER */
+
+    .rodape {
+        margin: 35px 50px;
+    }
+
+    .rodape .conteudo {
+        gap: 30px;
+    }
+
+    .rodape .info {
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+
+    .cabecalho {
+        width: calc(100% - 80px);
+        margin: 0 auto;
+        align-items: center;
+        padding: 10px 0 12px;
+    }
+
+    .cabecalho img:nth-child(2) {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    /* MAIN */
+
+    main {
+        margin: 50px 50px;
+    }
+
+
+    /* PERFIL */
+
+    .perfil {
+        gap: 20px;
+    }
+
+    .perfil-imagem {
+        gap: 15px;
+    }
+
+    .estatisticas {
+        gap: 6px;
+    }
+
+    .configuracao {
+        gap: 12px;
+    }
+
+    .configuracao button {
+        font-size: 22px;
+    }
+
+
+    /* MINHAS PLAYLIST */
+
+    h2 {
+        font-size: 30px;
+        margin-top: 55px;
+    }
+
+    .playlist {
+        padding: 30px 0;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .album {
+        width: 150px;
+        padding: 8px 8px 15px 8px;
+    }
+
+    .album img {
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+    }
+
+
+    /* ARTISTAS */
+
+    .artistas {
+        margin-top: 40px;
+        gap: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    /* FOOTER */
+
+    .rodape {
+        margin: 35px 50px;
+    }
+
+    .rodape .conteudo {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .rodape .info {
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    /* HEADER */
+
+    .cabecalho {
+        margin: 0 auto;
+        align-items: center;
+        padding: 5px 0 6px;
+    }
+
+    .cabecalho img:nth-child(2) {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* MAIN */
+
+    main {
+        margin: 35px 20px;
+    }
+
+    /* PERFIL */
+
+    .perfil {
+        gap: 20px;
+    }
+
+    .perfil-imagem {
+        gap: 12px;
+        width: 100%;
+    }
+
+    .perfil-imagem img {
+        max-width: 80px;
+    }
+
+    .estatisticas {
+        font-size: 13px;
+        gap: 5px;
+    }
+
+    .configuracao {
+        gap: 10px;
+        align-self: flex-end;
+    }
+
+    .configuracao button {
+        font-size: 20px;
+    }
+
+    /* MINHAS PLAYLIST */
+
+    h2 {
+        font-size: 24px;
+        margin-top: 40px;
+    }
+
+    .playlist {
+        align-items: center;
+        padding: 25px 0;
+        gap: 20px;
+    }
+
+    .album {
+        width: 100%;
+        max-width: 150px;
+        box-sizing: border-box;
+    }
+
+    .album img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* ARTISTAS */
+
+    .artistas {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        margin-top: 30px;
+    }
+
+    /* FOOTER */
+
+    .rodape {
+        padding: 25px 0;
+        gap: 20px;
+    }
+
+    .rodape .conteudo {
+        display: grid;
+        grid-template-columns: 1fr 110px;
+        column-gap: 20px;
+        row-gap: 25px;
+    }
+
+    .rodape .conteudo div:nth-child(2),
+    .rodape .conteudo div:nth-child(4) {
+        justify-self: end;
+        width: 100px;
+    }
+
+    .rodape .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .rodape .info .termos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px 15px;
+        max-width: 220px;
+    }
+
+    .rodape .info span {
+        font-size: 14px;
+    }
+
+    .rodape .info p {
+        font-size: 14px;
+        max-width: 100px;
+        margin: 0;
+    }
+
+
+}
