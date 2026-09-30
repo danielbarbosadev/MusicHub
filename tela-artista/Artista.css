@@ -3,7 +3,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-.cabecalho img:nth-child(2) {
+.icone-perfil {
     width: 50px;
     height: 50px;
 }
@@ -183,14 +183,15 @@ h2 {
 .foto-sobre {
     width: 500px;
     height: 500px;
-    border-radius: 50%;
+    max-width: 45%;
     object-fit: cover;
-    flex-shrink: 0;
+    border-radius: 50%;
 }
 
 
 .texto-sobre {
     flex: 1;
+    min-width: 0;
     max-width: 600px;
 }
 
@@ -281,6 +282,7 @@ h2 {
 }   
 
 @media (max-width: 768px){
+
     .conteudo-sobre {
        flex-direction: column;
        gap: 50px;
@@ -311,3 +313,116 @@ h2 {
         gap: 10px;
     }
 }
+
+@media (max-width: 480px){
+
+    /* Artista */
+    .artista {
+        margin: 0 20px;
+        padding: 20px 0;
+        font-size: 0.9rem;
+    }
+
+    .artista .foto-artista {
+        width: 70px;
+        height: 70px;
+    }
+
+    .info-artista h3 {
+        font-size: 1.0rem;
+    }
+
+    .icone-verificado {
+        width: 30px;
+        height: 30px;
+    }
+
+    .btn-seguir {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+
+
+    /* Músicas */
+    .musicas-mais-tocadas {
+        margin: 0 20px;
+    }
+
+    .faixa-musical {
+        grid-template-columns: 30px 1fr 50px;
+        gap: 10px;
+    }
+
+    .faixa-musical img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .reproducoes {
+        display: none;
+    }
+
+    .duracao {
+        font-size: 0.8rem;
+    }
+
+
+    /* Discografia */
+    .discografia {
+        margin: 0 20px;
+    }
+
+    .lista-discografia {
+        gap: 15px;
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    .album {
+        min-width: 100px;
+        width: 100px;
+    }
+
+
+    /* Sobre */
+    .sobre {
+        margin: 0 20px;
+    }
+
+    .conteudo-sobre {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .foto-sobre {
+        width: 100%;
+        height: auto;
+    }
+
+    .texto-sobre {
+        width: 100%;
+    }
+
+
+    /* Rodapé */
+     .rodape {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .rodape .conteudo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .rodape .info {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .rodape .info .termos {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
