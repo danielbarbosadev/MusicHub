@@ -1,0 +1,281 @@
+h2 {
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.cabecalho img:nth-child(2) {
+    width: 50px;
+    height: 50px;
+}
+
+/* artista */
+
+.artista {
+    display: flex;
+    align-items: center;
+    margin: 0 120px;
+    padding: 25px 0;
+}
+
+
+.artista .foto-artista {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.info-artista {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nome-verificado {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nome-verificado h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+}
+
+.icone-verificado {
+    width: 30px;
+    height: 30px;
+}
+.btn-seguir {
+    margin-left: auto; 
+    background-color: var(--cor-destaque-vermelho); 
+    color: var(--cor-fundo);
+    border: none;
+    padding: 10px 30px;
+    border-radius: var(--border-botao);
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-seguir:hover {
+    background-color: #B45938;
+}
+
+.btn-seguir.seguindo {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.btn-seguir.seguindo:hover {
+    background-color: #736E6E;
+}
+
+/* músicas mais tocadas */
+
+.musicas-mais-tocadas {
+    margin: 0 120px;
+    padding: 25px 0;
+}
+
+.lista-musicas {
+    list-style: none;
+    counter-reset: musica;
+    margin: 0;
+    padding: 0;
+}
+
+.lista-musicas li {
+    counter-increment: musica;
+
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+
+    margin-bottom: 12px;
+}
+
+.lista-musicas li::before {
+    content: counter(musica);
+    text-align: center;
+}
+
+.faixa-musical {
+    display: grid;
+    grid-template-columns: 42px 1fr 150px 60px;
+    align-items: center;
+    gap: 10px;
+}
+
+.faixa-musical img {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border-radius: var(--border-cards);
+}
+
+.faixa-musical p {
+    margin: 0;
+}
+
+.reproducoes,
+.duracao {
+    text-align: right;
+}
+
+.btn-ver-mais {
+    background-color: var(--cor-destaque-vermelho); 
+    color: var(--cor-fundo);
+    padding: 10px 20px;
+    border-radius: var(--border-botao);
+    cursor: pointer;
+    border: none;
+    margin: 5px 0 0 20px
+}
+
+.btn-ver-mais:hover {
+    background-color: #B45938;
+}
+
+/* Discografia */
+
+.discografia {
+    margin: 0 120px;
+    /* padding: 25px 0; */
+}
+
+.lista-discografia {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.album {
+    width: 250px;
+    cursor: pointer;
+}
+
+.album img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: var(--border-cards);
+}
+
+.album p {
+    display: inline;
+}
+/* Sobre o artista */
+
+.sobre{
+    margin: 0 120px;
+    padding: 25px 0;
+}
+
+.conteudo-sobre {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+
+.foto-sobre {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+
+.texto-sobre {
+    flex: 1;
+    max-width: 600px;
+}
+
+.texto-sobre p {
+    font-size: 1.15rem; 
+    line-height: 1.6;
+    color: var(--texto);
+}
+
+.leia-mais {
+    color: var(--cor-destaque-azul);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.leia-mais:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin: 35px 120px;
+}
+
+.rodape .linha {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #000;
+}
+
+.rodape .conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.conteudo div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.conteudo p {
+    cursor: pointer;
+}
+
+.conteudo p:hover {
+    text-decoration: underline;
+}
+
+.rodape .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.rodape .info span {
+    font-weight: bold;
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+}
+
+.rodape .info span:hover {
+    text-decoration: underline;
+}
+
+.rodape .info .termos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.rodape .info p {
+    font-weight: bold;
+}

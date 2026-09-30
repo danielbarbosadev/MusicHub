@@ -1,0 +1,229 @@
+.btn-entrar-login 
+{
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--cor-destaque-vermelho);
+
+    border: 1px solid var(--cor-destaque-vermelho);
+    border-radius: var(--border-botao);
+
+    padding: 10px 25px;
+}
+
+.btn-entrar-login:hover
+{
+    transform: scale(1.025);
+    transition: 100ms;
+}
+
+.conteudo 
+{
+    padding: 0 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 80vh;
+}
+
+.login 
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+
+    height: 80%;
+}
+
+.progresso-login 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    font-size: .8em;
+
+    position: relative;
+}
+
+.barra-progresso 
+{
+    background-color: var(--cor-borda);
+    width: 150px;
+    height: 10px;
+    border-radius: 100px;
+}
+
+.porcentagem 
+{
+    background-color: var(--cor-destaque-vermelho);
+    width: 75px;
+
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.titulo-login
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.titulo-login h1 
+{
+    font-size: 3em;
+    width: 55%;
+    font-weight: 700;
+}
+
+.titulo-login p 
+{
+    font-size: 1.5em;
+    width: 50%;
+    align-self: center;
+}
+
+form 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sessao-input 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+
+.sessao-input label 
+{
+    font-weight: 600;
+}
+
+.sessao-input input 
+{
+    height: 50px;
+    width: 500px;
+
+    border-radius: 10px;
+    border: 1px solid #a0a0a0;
+    outline: none;
+
+    padding-left: 10px;
+
+    display: flex;
+}
+
+.sessao-input input::placeholder 
+{
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+.sessao-input a 
+{
+    align-self: flex-end;
+    font-size: .9em;
+    font-weight: 600;
+    color: var(--cor-destaque-vermelho);
+}
+
+.campo-icone-input 
+{
+    position: relative;
+}
+
+.campo-icone-input img 
+{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn-confirmar 
+{
+    background-color: var(--cor-destaque-vermelho);
+
+    border: none;
+    border-radius: var(--border-botao);
+
+    height: 50px;
+    width: 400px;
+
+
+    font-weight: 700;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    transition: 100ms;
+}
+
+.btn-confirmar:hover 
+{
+    cursor: pointer;
+    background-color: #a33108;
+    transform: scale(1.025);
+}
+
+.entrar-com 
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--cor-destaque-vermelho);
+    text-transform: uppercase;
+    font-weight: 700;
+
+    margin: 15px 0 5px 0;
+}
+
+.linha 
+{
+    width: 100px;
+    height: 2px;
+    background-color: var(--cor-destaque-vermelho);
+}
+
+.sessao-entrar-alternativa 
+{
+    display: flex;
+    gap: 20px;
+}
+
+.btn-entrar-alternativa 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid var(--cor-borda);
+
+    border-radius: var(--border-botao);
+    width: 75px;
+    height: 40px;
+    background-color: #ffffff;
+    transition: 100ms;
+}
+
+.btn-entrar-alternativa:hover 
+{
+    cursor: pointer;
+    transform: scale(1.025);
+
+}
