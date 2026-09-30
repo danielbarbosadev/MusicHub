@@ -98,14 +98,10 @@ header {
 }
 
 .controle-usuario {
+    display: flex;
+    gap: 15px;
+    align-items: center;
     justify-self: end;
-}
-
-.controle-usuario img {
-    width: 44px;
-    height: 44px;
-    object-fit: cover;
-    border-radius: 50%;
 }
 
 
@@ -148,7 +144,7 @@ main {
             rgba(0, 0, 0, 0.60) 45%,
             rgba(0, 0, 0, 0.15) 100%
         ),
-        url("../imgs/beat-it.jpg");
+        url("../../imgs/banner-Jackson.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -194,7 +190,7 @@ main {
     margin-top: 28px;
 }
 
-.btn-ouvir-agora a {
+.btn-ouvir-agora a, .btn-criar-conta a {
     height: 48px;
     padding: 0 28px;
 
@@ -560,7 +556,6 @@ main {
 }
 
 .banner-bottom-direita img {
-    width: 180px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
 }
@@ -719,11 +714,6 @@ a:focus-visible {
     .explorar img {
         width: 20px;
         height: 20px;
-    }
-
-    .controle-usuario img {
-        width: 36px;
-        height: 36px;
     }
 
     main {
