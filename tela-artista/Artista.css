@@ -278,4 +278,36 @@ h2 {
 
 .rodape .info p {
     font-weight: bold;
+}   
+
+@media (max-width: 768px){
+    .conteudo-sobre {
+       flex-direction: column;
+       gap: 50px;
+    }
+
+    .sobre img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .texto-sobre p {
+    font-size: 1.0rem; 
+    line-height: 1.5em;
+    color: var(--texto);
+    }
+
+     .album {
+        width: 100px;
+        font-size: 0.7em;
+    }
+
+    .rodape{
+        font-size: small;
+    }
+
+    .rodape .info .termos{
+        flex-direction: column;
+        gap: 10px;
+    }
 }
