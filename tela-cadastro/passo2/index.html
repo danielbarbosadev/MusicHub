@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../style/global.css">
+    <link rel="stylesheet" href="../passo2/style.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../imgs/icone-musichub-branco.svg" type="image/x-icon">
+
+    <!-- Font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Cadastrar</title>
+</head>
+<body>
+     <header class="cabecalho">
+        <img src="../../imgs/logo-musichub-preta-horizontal.svg" alt="Logo horizontal preta do MusicHub">
+        <a href="../../tela-login/index.html" class="btn-entrar-login">Entrar</a>
+    </header>
+    <main class="conteudo">
+        <section class="cadastro">
+            <div class="titulo-cadastro">
+                <a href="../passo1/index.html" class="seta-voltar">
+                    <i class="fa-sharp fa-solid fa-chevron-left fa-2xl"></i>
+                </a>
+                <div class="progresso-cadastro">
+                    <span class="barra-progresso"></span>
+                    <p>Passo 2 de 2</p>
+                </div>
+                <h1>Insira seus dados pessoais</h1>
+            </div>
+            <form action="">
+                <article class="sessao-input">
+                    <label for="nome">Nome de usuário</label>
+                    <input type="text" name="" id="nome" placeholder="Digite seu nome de usuário">
+                </article>
+
+                <article class="sessao-input">
+                    <label for="idade">Idade</label>
+                    <input type="number" name="" id="idade" min="10" max="100" placeholder="Selecione sua idade">
+                </article>
+
+                <article class="sessao-input">
+                    <label for="identidade">identidade</label>
+                    <select name="" id="identidade">
+                        <option value="" disabled selected>Identidade</option>
+                        <option value="">Masculino</option>
+                        <option value="">Feminino</option>
+                        <option value="">Outro</option>
+                    </select>
+                </article>
+
+                <span class="txt-termos-privacidade">
+                    <p>Ao clicar em "Cadastrar-se gratuitamente",  você concorda com nossos</p>
+                    <a href="">Termos de uso</a>
+                    <p>e</p>
+                    <a href="">Política de privacidade</a>
+                </span>
+                <button class="btn-cadastrar">Cadastrar-se</button>
+                </span>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
