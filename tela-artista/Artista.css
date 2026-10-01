@@ -329,25 +329,18 @@ h2 {
 @media (max-width: 480px) {
 
     /* Ajuste final e preciso do cabeçalho */
-    .cabecalho {
+  .cabecalho {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100% !important;
-        max-width: 100% !important;
-        margin: 0 !important;
-        padding: 10px 20px !important;
+        width: auto !important;          /* Permite que as margens laterais definam o tamanho */
+        margin: 0 20px !important;       /* Mesma margem lateral de 20px dos outros elementos */
+        padding: 10px 0 !important;      /* Mantém o espaçamento em cima/baixo */
         box-sizing: border-box;
     }
 
-    .cabecalho picture {
-        display: flex;
-        max-width: 60%;
-        width: 50px;
-    }
-
     .cabecalho img {
-        max-width: 100%;
+        max-width: 45%;
         height: auto;
     }
 
