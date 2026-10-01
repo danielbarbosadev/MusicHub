@@ -560,9 +560,7 @@ main {
 }
 
 .banner-bottom-direita img {
-    width: 180px;
     aspect-ratio: 1 / 1;
-    object-fit: cover;
 }
 
 
