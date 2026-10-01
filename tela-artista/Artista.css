@@ -3,7 +3,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-.cabecalho img:nth-child(2) {
+.icone-perfil {
     width: 50px;
     height: 50px;
 }
@@ -32,6 +32,12 @@ h2 {
     gap: 5px;
 }
 
+.ouvintes {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
 .nome-verificado {
     display: flex;
     align-items: center;
@@ -48,9 +54,10 @@ h2 {
     width: 30px;
     height: 30px;
 }
+
 .btn-seguir {
-    margin-left: auto; 
-    background-color: var(--cor-destaque-vermelho); 
+    margin-left: auto;
+    background-color: var(--cor-destaque-vermelho);
     color: var(--cor-fundo);
     border: none;
     padding: 10px 30px;
@@ -125,7 +132,7 @@ h2 {
 }
 
 .btn-ver-mais {
-    background-color: var(--cor-destaque-vermelho); 
+    background-color: var(--cor-destaque-vermelho);
     color: var(--cor-fundo);
     padding: 10px 20px;
     border-radius: var(--border-botao);
@@ -166,9 +173,10 @@ h2 {
 .album p {
     display: inline;
 }
+
 /* Sobre o artista */
 
-.sobre{
+.sobre {
     margin: 0 120px;
     padding: 25px 0;
 }
@@ -183,19 +191,20 @@ h2 {
 .foto-sobre {
     width: 500px;
     height: 500px;
-    border-radius: 50%;
+    max-width: 45%;
     object-fit: cover;
-    flex-shrink: 0;
+    border-radius: 50%;
 }
 
 
 .texto-sobre {
     flex: 1;
+    min-width: 0;
     max-width: 600px;
 }
 
 .texto-sobre p {
-    font-size: 1.15rem; 
+    font-size: 1.15rem;
     line-height: 1.6;
     color: var(--texto);
 }
@@ -278,4 +287,197 @@ h2 {
 
 .rodape .info p {
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+    .conteudo-sobre {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .ouvintes {
+        flex-direction: column;
+    }
+
+    .sobre img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .texto-sobre p {
+        font-size: 1.0rem;
+        line-height: 1.5em;
+        color: var(--texto);
+    }
+
+    .album {
+        width: 100px;
+        font-size: 0.7em;
+    }
+
+    .rodape {
+        font-size: small;
+    }
+
+    .rodape .info .termos {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Ajuste final e preciso do cabeçalho */
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 10px 20px !important;
+        box-sizing: border-box;
+    }
+
+    .cabecalho picture {
+        display: flex;
+        max-width: 60%;
+        width: 50px;
+    }
+
+    .cabecalho img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .icone-perfil {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+
+    /* Artista */
+    .artista {
+        margin: 0 20px;
+        padding: 20px 0;
+        font-size: 0.9rem;
+    }
+
+    .artista .foto-artista {
+        width: 70px;
+        height: 70px;
+    }
+
+    .info-artista h3 {
+        font-size: 1.0rem;
+    }
+
+    .ouvintes {
+        flex-direction: column;
+    }
+
+    .icone-verificado {
+        width: 30px;
+        height: 30px;
+    }
+
+    .btn-seguir {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+
+
+    /* Músicas */
+    .musicas-mais-tocadas {
+        margin: 0 20px;
+    }
+
+    .faixa-musical {
+        grid-template-columns: 30px 1fr 50px;
+        gap: 10px;
+    }
+
+    .faixa-musical img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .reproducoes {
+        display: none;
+    }
+
+    .duracao {
+        font-size: 0.8rem;
+    }
+
+
+    /* Discografia */
+    .discografia {
+        margin: 0 20px;
+    }
+
+    .lista-discografia {
+        gap: 15px;
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    .album {
+        min-width: 100px;
+        width: 100px;
+    }
+
+
+    /* Sobre */
+    .sobre {
+        margin: 0 20px;
+    }
+
+    .conteudo-sobre {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .foto-sobre {
+        width: 100%;
+        height: auto;
+    }
+
+    .texto-sobre {
+        width: 100%;
+    }
+
+
+    /* Rodapé */
+    .rodape {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .rodape .conteudo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .rodape .conteudo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .rodape .info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .rodape .info .termos {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
 }

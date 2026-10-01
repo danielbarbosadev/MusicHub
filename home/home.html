@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicHub - Encontre suas músicas preferidas</title>
+
+    <!-- Fonte usada no restante do site (Plus Jakarta Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- global primeiro, CSS da página depois (assim o da página prevalece) -->
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="shortcut icon" href="../imgs/icone-musichub-preta.svg">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="home.html"><img src="../imgs/logo-musichub-preta-horizontal.svg" alt="Logo de 'MusicHub'"></a>
+        </div>
+        <div class="explorar">
+            <a href="#">
+                <img src="../imgs/btn-ExplorarBussola.svg" alt="Ícone de bússola">
+                <p>Explorar</p>
+            </a>
+        </div>
+        <div class="controle-usuario">
+            <a href="../tela-perfil/Perfil.html" id="icone-usuario"><img src="../imgs/user-perfil.svg" alt="Imagem do usuário"></a>
+        </div>
+        <!-- <div class="controle-usuario">
+            <a href="#">Entrar</a>
+            <a href="#" class="">Criar conta</a>
+        </div> -->
+    </header>
+
+    <main>
+        <div class="top-area">
+            <section class="banner-principal">
+                <h1>Música do dia</h1>
+
+                <h2>Beat it</h2>
+
+                <p class="banner-artista">Michael Jackson</p>
+                <p class="banner-meta">
+                    <span>Thriller</span>
+                    <span>1982</span>
+                    <span>4:59</span>
+                </p>
+
+                <article class="btn-ouvir-agora">
+                    <a href="#">
+                        <img src="../imgs/btn-OuvirAgoraTriangulo.svg" alt="Ícone de triângulo rotacionado em 90º">
+                        <p>Ouvir agora</p>
+                    </a>
+                </article>
+            </section>
+        </div>
+
+        <div class="middle-area">
+
+            <section class="nav-categorias">
+                <h2>Navegue por categorias</h2>
+                <article class="nav-categorias-generos">
+                    <img src="../imgs/btn-RockGuitarra.svg" alt="Ícone de guitarra">
+                    <p>Rock</p>
+                </article>
+                <article class="nav-categorias-generos">
+                    <img src="../imgs/btn-PopEstrela.svg" alt="Ícone de estrela">
+                    <p>Pop</p>
+                </article>
+                <article class="nav-categorias-generos">
+                    <img src="../imgs/btn-EletronicaRapDisco.svg" alt="Ícone de disco">
+                    <p>Eletrônica</p>
+                </article>
+                <article class="nav-categorias-generos">
+                    <img src="../imgs/btn-EletronicaRapMic.svg" alt="Ícone de microfone">
+                    <p>Rap</p>
+                </article>
+                <article class="nav-categorias-generos">
+                    <img src="../imgs/btn-pastaComNota.svg" alt="Ícone de mínima dentro de pasta de arquivos">
+                    <p>Ver todas</p>
+                </article>
+            </section>
+
+            <section class="nav-musicas">
+                <h2>Músicas populares</h2>
+                <span>Ver mais</span>
+                <article class="nav-musicas-articles">
+                    <img src="../imgs/album-RadioheadKid.svg" alt="Capa de 'Kid A'">
+                    <h3>Kid A</h3>
+                    <p>Radiohead</p>
+                    <p>Kid A</p>
+                    <p>2000</p>
+                </article>
+                <article class="nav-musicas-articles">
+                    <img src="../imgs/album-JacksonThriller.svg" alt="Capa de 'Beat it'">
+                    <h3>Beat it</h3>
+                    <p>Michael Jackson</p>
+                    <p>Thriller</p>
+                    <p>1982</p>
+                </article>
+                <article class="nav-musicas-articles">
+                    <img src="../imgs/album-SabrinaShort.svg" alt="Capa de 'Espresso'">
+                    <h3>Espresso</h3>
+                    <p>Sabrina Carpenter</p>
+                    <p>Short n' Sweet</p>
+                    <p>2025</p>
+                </article>
+                <article class="nav-musicas-articles">
+                    <img src="../imgs/album-KendrickU.svg" alt="Capa de 'u'">
+                    <h3>u</h3>
+                    <p>Kendrick Lamar</p>
+                    <p>To Pimp A Butterfly</p>
+                    <p>2015</p>
+                </article>
+            </section>
+
+            <section class="lista-playlist">
+                <h2>Playlists em destaque</h2>
+                <span>Ver todas</span>
+                <article class="playlist-article">
+                    <img src="../imgs/playlist-ClassicosRock.svg" alt="Capa de 'Beatles'">
+                    <h3>Clássicos do Rock</h3>
+                    <p>42 músicas</p>
+                </article>
+                <article class="playlist-article">
+                    <img src="../imgs/playlist-Mpb.svg" alt="Capa de 'Elis & Tom'">
+                    <h3>MPB</h3>
+                    <p>35 músicas</p>
+                </article>
+                <article class="playlist-article">
+                    <img src="../imgs/playlist-Relaxar.svg" alt="Capa de 'Lamb pulando'">
+                    <h3>Música para relaxar</h3>
+                    <p>60 músicas</p>
+                </article>
+            </section>
+
+            <section class="lista-acervo">
+                <h2>Explore o acervo</h2>
+                <a href="#">
+                    <img src="../imgs/explorarMenu-albuns.svg" alt="Ícone de pasta">
+                    Álbuns
+                    <img src="../imgs/explorarMenu-setaDireita.svg" alt="Ícone de seta à direita">
+                </a>
+                <a href="#">
+                    <img src="../imgs/explorarMenu-artistas.svg" alt="Ícone de pessoa">
+                    Artistas
+                    <img src="../imgs/explorarMenu-setaDireita.svg" alt="Ícone de seta à direita">
+                </a>
+                <a href="#">
+                    <img src="../imgs/explorarMenu-musicas.svg" alt="Ícone de semínimas">
+                    Músicas
+                    <img src="../imgs/explorarMenu-setaDireita.svg" alt="Ícone de seta à direita">
+                </a>
+            </section>
+        </div>
+
+        <div class="bottom-area">
+            <section class="nav-descoberta">
+                <h2>Descubra álbuns - 1960s e 1970s</h2>
+                <span>Ver mais</span>
+                <article class="nav-musicas-articles">
+                    <a href="../tela-album/index.html">
+                        <img src="../imgs/album-PetSounds.jpg" alt="Capa de 'Pet Sounds'">
+                        <h3>Pet Sounds</h3>
+                    </a>
+                    <p> The Beach Boys</p>
+                    <p>1966</p>
+                </article>
+                <article class="nav-musicas-articles">
+                    <img src="../imgs/album-McCartRAM.svg" alt="Capa de 'RAM'">
+                    <h3>RAM</h3>
+                    <p>Paul McCartney</p>
+                    <p>1971</p>
+                </article>
+                <article class="nav-musicas-articles">
+                    <img src="../imgs/album-HarrisonAllThings.svg" alt="Capa de 'All Things Must Pass'">
+                    <h3>All Things Must Pass</h3>
+                    <p>George Harrison</p>
+                    <p>1970</p>
+                </article>
+                <article class="nav-musicas-articles">
+                    <img src="../imgs/album-CaroleKingTapestry.svg" alt="Capa de 'Tapestry'">
+                    <h3>Tapestry</h3>
+                    <p>Carole King</p>
+                    <p>1971</p>
+                </article>
+                <article class="nav-musicas-articles">
+                    <img src="../imgs/album-JacksonOff.svg" alt="Capa de 'Off The Wall'">
+                    <h3>Off The Wall</h3>
+                    <p>Michael Jackson</p>
+                    <p>1979</p>
+                </article>
+                <article class="nav-musicas-articles">
+                    <img src="../imgs/album-LedHouses.svg" alt="Capa de 'Houses of the Holy'">
+                    <h3>Houses of the Holy</h3>
+                    <p>Led Zeppelin</p>
+                    <p>1973</p>
+                </article>
+            </section>
+
+            <section class="nav-descoberta">
+                <h2>Clássicos brasileiros - 1990s</h2>
+                <span>Ver mais</span>
+                <article class="nav-musicas-articles">
+                    <img src="../imgs/album-RacionaisSobrevivenod.svg" alt="Capa de 'Sobrevivendo no inferno'">
+                    <h3>Sobrevivendo no inferno</h3>
+                    <p>Racionais MC's</p>
+                    <p>1997</p>
+                </article>
+                <article class="nav-musicas-articles">
+                    <img src="../imgs/album-ChicoScienceLama.svg" alt="Capa de 'Da Lama ao Caos'">
+                    <h3>Da Lama ao Caos</h3>
+                    <p>Chico Science</p>
+                    <p>1994</p>
+                </article>
+                <article class="nav-musicas-articles">
+                    <img src="../imgs/album-GilAcustivo.svg" alt="Capa de 'Acústico MTV'">
+                    <h3>Acústico MTV</h3>
+                    <p>Gilberto Gil</p>
+                    <p>1990</p>
+                </article>
+                <article class="nav-musicas-articles">
+                    <img src="../imgs/album-SkankSamba.svg" alt="Capa de 'O Samba Poconé'">
+                    <h3>O Samba Poconé</h3>
+                    <p>Skank</p>
+                    <p>1996</p>
+                </article>
+                <article class="nav-musicas-articles">
+                    <img src="../imgs/album-Raimundos.svg" alt="Capa de 'Raimundos'">
+                    <h3>Raimundos</h3>
+                    <p>Raimundos</p>
+                    <p>1994</p>
+                </article>
+                <article class="nav-musicas-articles">
+                    <img src="../imgs/album-MarisaMonte.svg" alt="Capa de 'Verde, Anil, Amarelo, Cor de Rosa e Carvão'">
+                    <h3>Verde, Anil, Amarelo, Cor de Rosa e Carvão</h3>
+                    <p>Marisa Monte</p>
+                    <p>1994</p>
+                </article>
+            </section>
+
+            <section class="banner-bottom">
+                <div class="banner-bottom-esquerda">
+                    <p>Nova semana, novas recomendações.</p>
+                    <p>Explore novas músicas, álbuns e playlists com MusicHub!</p>
+                </div>
+                <div class="banner-bottom-direita">
+                    <img src="../imgs/bannerPic-discoVinil.svg" alt="Imagem de disco de vinil">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <hr class="linha">
+        <div class="conteudo">
+            <div class="suporte">
+                <h3>Suporte e Info</h3>
+                <p>Central de Ajuda</p>
+                <p>FAQs</p>
+                <p>Sobre</p>
+            </div>
+            <div class="comunidade">
+                <h3>Comunidade</h3>
+                <p>Fórum</p>
+                <p>Artistas</p>
+                <p>Playlists</p>
+            </div>
+            <div class="noticias">
+                <h3>Notícias</h3>
+                <p>Blog/Novidades</p>
+                <p>Lançamentos</p>
+                <p>Imprensa</p>
+            </div>
+            <div class="empresas">
+                <h3>Empresas</h3>
+                <p>Carreiras</p>
+                <p>Contato</p>
+            </div>
+        </div>
+        <div class="info">
+            <div class="sobre">
+                <span>Termos e Condições</span>
+                <span>Política de Privacidade</span>
+                <span>Cookies</span>
+                <span>Sobre Nós</span>
+            </div>
+            <p>© 2026 MusicHub - Português</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

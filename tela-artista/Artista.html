@@ -16,11 +16,13 @@
 
 <body>
 
-    <header class="cabecalho">
+<header class="cabecalho">
+    <picture> 
+        <source media="(max-width: 480px)" srcset="../imgs/icone-musichub-preta.svg">
         <img src="../imgs/logo-musichub-preta-horizontal.svg" alt="logotipo do site">
-        <img src="../imgs/perfil-tom-holland.svg" alt="foto de perfil do usuário">
-    </header>
-
+    </picture>
+    <img  class="icone-perfil"  src="../imgs/perfil-tom-holland.svg" alt="foto de perfil do usuário">
+</header>
     <main>
 
         <!-- Artista -->
@@ -35,8 +37,10 @@
 
                     <img src="../imgs/selo-verificado.svg" alt="Selo de verificado" class="icone-verificado">
                 </div>
-
-                <p>8.367.000 ouvintes mensais</p>
+                <div class="ouvintes">
+                    <p>8.367.000</p>
+                    <p>ouvintes mensais</p>
+                </div>
 
             </div>
 
@@ -215,10 +219,10 @@
         <div class="info">
 
             <div class="termos">
-                <span>Termos e Condições</span>
-                <span>Política de Privacidade</span>
-                <span>Cookies</span>
-                <span>Sobre Nós</span>
+                <p>Termos e Condições</p>
+                <p>Política de Privacidade</p>
+                <p>Cookies</p>
+                <p>Sobre Nós</p>
             </div>
 
             <p>© 2026 MusicHub - Português</p>
@@ -226,9 +230,7 @@
         </div>
 
     </footer>
-
     <script src="Artista.js"></script>
-
 </body>
 
 </html>
